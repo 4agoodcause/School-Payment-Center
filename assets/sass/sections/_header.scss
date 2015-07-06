@@ -1,0 +1,101 @@
+
+.header {
+  @include cf;
+  position: relative;
+  padding: $base 40px;
+  background: #fff;
+}
+
+.header .logo {
+  position: relative;
+  float: left;
+  width: 60%;
+}
+
+.header .logo-image {
+  display: block;
+  float: left;
+  width: 84px;
+  margin-right: 40px;
+}
+
+.header .logo-titles {
+  @include vertical-center(absolute);
+  padding-left: 124px;
+}
+
+.header .logo .school-title {
+  margin-bottom: 12px;
+  color: $purple;
+}
+
+.header .logo .site-title {
+  @include font-size(24px);
+  font-weight: $bold;
+}
+
+.header-nav {
+  @include vertical-center(absolute);
+  right: 40px;
+}
+
+.header-nav .nav-items {
+  @include cf;
+  margin-bottom: 12px;
+}
+
+.header-nav li {
+  float: left;
+  margin-left: 40px;
+}
+
+.header-nav li a {
+  color: $dk-purple;
+  font-weight: $med;
+
+  &:hover {
+    color: $purple;
+  }
+}
+
+.header-nav .nav-cta {
+  clear: left;
+  text-align: right;
+  color: $purple;
+  font-weight: $bold;
+
+  @include bp-min-width($medium) {
+    @include font-size(21px);
+    float: right;
+  }
+
+  &:hover {
+    color: $dk-purple;
+  }
+}
+
+.top-bar {
+  @include cf;
+  padding: 12px 40px;
+  background: $dk-purple;
+}
+
+.top-bar a {
+  color: #fff;
+}
+
+.top-bar .school-link {
+  @include font-size(13px);
+  float: left;
+}
+
+.account-nav {
+  float: right;
+}
+
+.account-nav li {
+  @include font-size(15px);
+  float: left;
+  margin-left: 60px;
+  font-weight: $med;
+}

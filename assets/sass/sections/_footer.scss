@@ -1,0 +1,27 @@
+
+.footer {
+  @include cf;
+  padding: $base 40px;
+  background: $dk-purple;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer p {
+  @include font-size(13px);
+}
+
+.footer .copyright {
+  @include bp-min-width($medium) {
+    float: left;
+  }
+}
+
+.footer .security {
+  @include bp-min-width($medium) {
+    float: right;
+  }
+}

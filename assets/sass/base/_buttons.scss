@@ -1,0 +1,42 @@
+
+a {
+	@include transition(all 0.15s ease-in);
+	color: $gold;
+
+	&:hover {
+	}
+}
+
+.btn {
+  display: block;
+  padding: 1em 1.5em;
+  background: $gold;
+  color: #fff;
+  font: $med 1em/1 $sans;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    display: inline-block;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  @include transition(background 0.15s ease-in);
+  padding: 5px 16px;
+  background: $gold;
+  border: none;
+  color: #fff;
+  font: $med 1em/1.5em $sans;
+  cursor: pointer;
+
+  @include bp-max-width($small) {
+    width: 100%;
+  }
+}

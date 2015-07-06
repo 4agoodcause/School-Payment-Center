@@ -1,0 +1,17 @@
+
+svg {
+  @include global-transition(0.1s);
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+[class^="icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-cart {
+
+}
