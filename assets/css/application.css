@@ -942,6 +942,7 @@ td, th {
   font-size: 1.0625rem;
   color: #6b2ca3;
   font-weight: 700;
+  text-align: right;
 }
 @media (max-width: 37.4375em) {
   .header-nav .nav-cta {
@@ -950,11 +951,14 @@ td, th {
     right: 20px;
   }
 }
-@media (min-width: 37.5em) and (max-width: 74.9375em) {
+@media (min-width: 37.5em) {
   .header-nav .nav-cta {
     float: right;
+  }
+}
+@media (min-width: 37.5em) and (max-width: 74.9375em) {
+  .header-nav .nav-cta {
     padding-right: 20px;
-    text-align: right;
   }
 }
 @media (min-width: 75em) {

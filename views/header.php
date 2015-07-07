@@ -10,7 +10,7 @@
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
   <body>
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/views/svg.php'; ?>
+<?php include './views/svg.php'; ?>
 
     <div class="top-bar">
       <a href="" class="school-link">Visit the Upper Moreland School District Webite</a>

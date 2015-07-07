@@ -148,6 +148,7 @@
   @include font-size(17px);
   color: $purple;
   font-weight: $bold;
+  text-align: right;
 
   @include bp-max-width($small) {
     position: absolute;
@@ -155,10 +156,12 @@
     right: 20px;
   }
 
-  @include bp-min-max($small, $xlarge) {
+  @include bp-min-width($small) {
     float: right;
+  }
+
+  @include bp-min-max($small, $xlarge) {
     padding-right: 20px;
-    text-align: right;
   }
 
   @include bp-min-width($xlarge) {
