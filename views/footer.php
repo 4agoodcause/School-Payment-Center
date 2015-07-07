@@ -14,6 +14,6 @@
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="/assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
   </body>
 </html>
