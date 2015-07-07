@@ -23,7 +23,7 @@
     <header class="header">
 
       <div class="logo">
-        <a href="./" class="logo-image"><img src="/assets/images/logo.png" alt="Upper Moreland School District"></a>
+        <a href="./" class="logo-image"><img src="assets/images/logo.png" alt="Upper Moreland School District"></a>
         <div class="logo-titles">
           <h1 class="school-title">Upper Moreland School District</h1>
           <p class="site-title">Online Payment Center</p>
