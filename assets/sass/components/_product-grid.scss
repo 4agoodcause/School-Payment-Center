@@ -1,0 +1,31 @@
+
+.product-grid {
+  @include cf;
+  text-align: center;
+}
+
+.product-grid .col-1-3 {
+  margin-bottom: $base*2;
+}
+
+.product-thumb {
+  margin-bottom: 12px;
+}
+
+.product-title {
+  margin-bottom: 6px;
+}
+
+.product-title a {
+  color: $dk-purple;
+  font-weight: $med;
+
+  &:hover {
+    color: $purple;
+  }
+}
+
+.product-price {
+  color: $purple;
+  font-weight: $med;
+}

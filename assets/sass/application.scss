@@ -13,10 +13,10 @@
 @import "base/forms";
 @import "base/tables";
 
-@import "components/side-nav";
-// @import "components/content-header";
+@import "components/categories-nav";
+@import "components/product-grid";
+@import "components/news-notes";
 
-// @import "pages/style-guide";
-
+@import "sections/top-bar";
 @import "sections/header";
 @import "sections/footer";

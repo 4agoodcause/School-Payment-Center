@@ -1,0 +1,34 @@
+
+.news-notes {
+  margin-bottom: $base*1.5;
+
+  @include bp-min-width($large) {
+    margin-bottom: $base*3;
+  }
+
+  @include bp-min-width($xlarge) {
+    position: relative;
+    padding-left: 220px;
+  }
+}
+
+.news-notes h3 {
+  @include line-height(24px);
+  font-weight: $bold;
+  text-transform: uppercase;
+
+  @include bp-min-width($xlarge) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.news-notes p {
+  font-style: italic;
+
+  @include bp-max-width($xsmall) {
+    @include font-size(13px);
+    @include line-height(20px);
+  }
+}

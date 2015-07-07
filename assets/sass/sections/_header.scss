@@ -2,56 +2,142 @@
 .header {
   @include cf;
   position: relative;
-  padding: $base 40px;
-  background: #fff;
+  padding: 12px 0;
+
+  @include bp-min-width($medium) {
+    padding: $base 0;
+  }
 }
 
 .header .logo {
   position: relative;
-  float: left;
-  width: 60%;
+  padding-left: 20px;
+
+  @include bp-max-width($xlarge) {
+    @include cf;
+    margin-bottom: $base;
+  }
+
+  @include bp-max-width($medium) {
+    margin-bottom: 12px;
+  }
+
+  @include bp-min-width($xlarge) {
+    float: left;
+    width: 66%;
+    padding-left: 40px;
+  }
 }
 
 .header .logo-image {
   display: block;
   float: left;
-  width: 84px;
-  margin-right: 40px;
+  width: 60px;
+  margin-right: 20px;
+
+  @include bp-min-width($large) {
+    width: 84px;
+    margin-right: 40px;
+  }
 }
 
 .header .logo-titles {
   @include vertical-center(absolute);
-  padding-left: 124px;
+  padding-left: 84px;
+
+  @include bp-min-width($large) {
+    padding-left: 124px;
+  }
 }
 
 .header .logo .school-title {
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   color: $purple;
+
+  @include bp-max-width($large) {
+    @include font-size(24px);
+  }
+
+  @include bp-min-width($large) {
+    margin-bottom: 12px;
+  }
 }
 
 .header .logo .site-title {
-  @include font-size(24px);
+  @include font-size(17px);
   font-weight: $bold;
+
+  @include bp-min-width($large) {
+    @include font-size(24px);
+  }
 }
 
 .header-nav {
-  @include vertical-center(absolute);
-  right: 40px;
+  @include bp-max-width($xlarge) {
+    @include cf;
+    position: relative;
+    clear: both;
+    border-top: 1px solid $lt-purple;
+  }
+
+  @include bp-max-width($medium) {
+    padding-top: 12px;
+  }
+
+  @include bp-min-max($medium, $xlarge) {
+    padding-top: $base;
+  }
+
+  @include bp-min-width($xlarge) {
+    @include vertical-center(absolute);
+    right: 40px;
+  }
 }
 
 .header-nav .nav-items {
   @include cf;
-  margin-bottom: 12px;
+
+  @include bp-max-width($small) {
+    display: none;
+  }
+
+  @include bp-min-max($small, $xlarge) {
+    float: left;
+    padding-left: 20px;
+  }
+
+  @include bp-min-width($xlarge) {
+    margin-bottom: 12px;
+  }
+
+  &.is-active {
+    display: block;
+  }
 }
 
 .header-nav li {
-  float: left;
-  margin-left: 40px;
+  @include bp-min-width($small) {
+    float: left;
+  }
+}
+
+.header-nav li:not(:first-child) {
+  @include bp-min-width($small) {
+    margin-left: 40px;
+  }
 }
 
 .header-nav li a {
+  @include font-size(15px);
   color: $dk-purple;
   font-weight: $med;
+
+  @include bp-max-width($small) {
+    display: block;
+    margin: 12px 0 -12px;
+    padding: 6px 20px;
+    background: $lt-purple;
+  }
 
   &:hover {
     color: $purple;
@@ -59,14 +145,25 @@
 }
 
 .header-nav .nav-cta {
-  clear: left;
-  text-align: right;
+  @include font-size(17px);
   color: $purple;
   font-weight: $bold;
 
-  @include bp-min-width($medium) {
-    @include font-size(21px);
+  @include bp-max-width($small) {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+  }
+
+  @include bp-min-max($small, $xlarge) {
     float: right;
+    padding-right: 20px;
+    text-align: right;
+  }
+
+  @include bp-min-width($xlarge) {
+    @include font-size(21px);
+    clear: left;
   }
 
   &:hover {
@@ -74,28 +171,69 @@
   }
 }
 
-.top-bar {
-  @include cf;
-  padding: 12px 40px;
+.header-nav .nav-cta .first-time {
+  @include bp-max-width($medium) {
+    display: none;
+  }
+}
+
+.nav-cta .icon-arrow-right {
+  margin-left: 4px;
+  fill: $purple;
+}
+
+.mobile-nav-trigger {
+  margin-left: 20px;
+  color: $dk-purple;
+  font-weight: $med;
+
+  @include bp-min-width($small) {
+    display: none;
+  }
+}
+
+.icon-menu {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+
+.menu-bar {
+  @include global-transition(0.1s);
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 4px;
   background: $dk-purple;
 }
 
-.top-bar a {
-  color: #fff;
+.menu-bar:nth-child(1) {
+  top: 0;
 }
 
-.top-bar .school-link {
-  @include font-size(13px);
-  float: left;
+.is-active .menu-bar:nth-child(1) {
+  @include rotate(45deg);
+  top: 7px;
 }
 
-.account-nav {
-  float: right;
+.menu-bar:nth-child(2) {
+  top: 7px;
 }
 
-.account-nav li {
-  @include font-size(15px);
-  float: left;
-  margin-left: 60px;
-  font-weight: $med;
+.is-active .menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-bar:nth-child(3) {
+  top: 14px;
+}
+
+.is-active .menu-bar:nth-child(3) {
+  @include rotate(-45deg);
+  top: 7px;
 }

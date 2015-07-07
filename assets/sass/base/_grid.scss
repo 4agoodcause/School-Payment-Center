@@ -1,7 +1,7 @@
 $pad: 20px;
 
 .row {
-  @include bp-min-width($large) {
+  @include bp-min-width($medium) {
     @include cf;
     margin: 0 -20px;
   }
@@ -12,7 +12,7 @@ $pad: 20px;
     margin-bottom: $base;
   }
 
-  @include bp-min-width($large) {
+  @include bp-min-width($medium) {
     float: left;
     padding: 0 $pad;
   }

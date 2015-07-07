@@ -1,9 +1,13 @@
 
 .footer {
   @include cf;
-  padding: $base 40px;
+  padding: $base 20px;
   background: $dk-purple;
   color: #fff;
+
+  @include bp-min-width($large) {
+    padding: $base 40px;
+  }
 }
 
 .footer a {

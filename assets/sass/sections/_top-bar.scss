@@ -1,0 +1,37 @@
+
+.top-bar {
+  @include cf;
+  padding: 12px 20px;
+  background: $dk-purple;
+
+  @include bp-min-width($large) {
+    padding: 12px 40px;
+  }
+}
+
+.top-bar a {
+  color: #fff;
+}
+
+.top-bar .school-link {
+  @include font-size(13px);
+  float: left;
+
+  @include bp-max-width($medium) {
+    display: none;
+  }
+}
+
+.account-nav {
+  float: right;
+}
+
+.account-nav li {
+  @include font-size(15px);
+  float: left;
+  font-weight: $med;
+}
+
+.account-nav li:not(:first-child) {
+  margin-left: 60px;
+}
