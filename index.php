@@ -14,8 +14,8 @@
       <div class="product-grid">
         <div class="row">
           <div class="col-1-3">
-            <div class="product-thumb"><a href=""><img src="assets/images/product-thumb-fpo.png"></a></div>
-            <h4 class="product-title"><a href="">The Product Title</a></h4>
+            <div class="product-thumb"><a href="product.php"><img src="assets/images/product-thumb-fpo.png"></a></div>
+            <h4 class="product-title"><a href="product.php">The Product Title</a></h4>
             <p class="product-price">$60.00</p>
           </div>
           <div class="col-1-3">

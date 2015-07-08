@@ -875,6 +875,8 @@ td, th {
 }
 
 .header .logo-image {
+  position: relative;
+  z-index: 10;
   display: block;
   float: left;
   width: 60px;
