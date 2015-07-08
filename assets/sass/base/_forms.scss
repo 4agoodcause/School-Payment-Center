@@ -33,8 +33,19 @@
 }
 
 label {
+  @include font-size(17px);
   display: block;
+  font-weight: $med;
   margin-bottom: 4px;
+}
+
+.form-helper {
+  @include font-size(13px);
+  font-weight: $book;
+}
+
+label .form-helper {
+  margin-left: 4px;
 }
 
 input[type="text"],

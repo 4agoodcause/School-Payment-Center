@@ -1,0 +1,66 @@
+
+.single-product .product-title {
+  margin-bottom: $base;
+  font-weight: $bold;
+
+  @include bp-min-width($large) {
+    @include font-size(36px);
+    margin-bottom: $base*1.5;
+  }
+}
+
+.product-body {
+  position: relative;
+
+  @include bp-min-width($medium) {
+    padding-left: 240px;
+  }
+}
+
+.product-image {
+  margin-bottom: $base;
+
+  @include bp-min-width($medium) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.product-description {
+  margin-bottom: $base;
+}
+
+.product-description p {
+  @include bp-max-width($small) {
+    @include font-size(13px);
+    @include line-height(20px);
+  }
+}
+
+.product-price {
+  @include font-size(24px);
+  margin-bottom: $base;
+}
+
+.form-quantity {
+  margin-bottom: $base;
+}
+
+.form-quantity label {
+  display: inline;
+  margin-right: 10px;
+}
+
+.form-quantity input {
+  width: 60px;
+}
+
+.product-body textarea {
+  height: $base*2;
+
+  @include bp-min-width($small) {
+    max-width: 420px;
+  }
+}
+

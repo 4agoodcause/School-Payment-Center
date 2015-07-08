@@ -29,11 +29,14 @@ input[type="submit"],
 input[type="button"],
 button {
   @include transition(background 0.15s ease-in);
-  padding: 5px 16px;
+  @include font-size(17px);
+  padding: 12px 24px;
   background: $gold;
   border: none;
+  border-radius: 4px;
   color: #fff;
   font: $med 1em/1.5em $sans;
+  text-transform: uppercase;
   cursor: pointer;
 
   @include bp-max-width($small) {
