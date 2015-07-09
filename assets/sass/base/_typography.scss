@@ -49,13 +49,18 @@ em {
   font-style: italic;
 }
 
-
 .page-title {
   font-weight: $bold;
 
   @include bp-min-width($large) {
     @include font-size(36px);
   }
+}
+
+.content h3 {
+  margin-bottom: 12px;
+  font-weight: $bold;
+  text-transform: uppercase;
 }
 
 .label {
