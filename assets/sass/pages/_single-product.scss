@@ -1,14 +1,4 @@
 
-.single-product .product-title {
-  margin-bottom: $base;
-  font-weight: $bold;
-
-  @include bp-min-width($large) {
-    @include font-size(36px);
-    margin-bottom: $base*1.5;
-  }
-}
-
 .product-body {
   position: relative;
 

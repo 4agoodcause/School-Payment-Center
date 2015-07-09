@@ -6,7 +6,9 @@
 
     <section class="content single-product">
 
-      <h2 class="product-title">Product Title Goes Here</h2>
+      <header class="page-header">
+        <h2 class="page-title">Product Title Goes Here</h2>
+      </header>
 
       <div class="product-body">
         <div class="product-image">

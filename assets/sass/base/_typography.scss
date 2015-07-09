@@ -49,6 +49,15 @@ em {
   font-style: italic;
 }
 
+
+.page-title {
+  font-weight: $bold;
+
+  @include bp-min-width($large) {
+    @include font-size(36px);
+  }
+}
+
 .label {
   font-weight: $bold;
 }

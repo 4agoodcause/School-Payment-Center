@@ -1,0 +1,12 @@
+
+.page-header {
+  margin-bottom: $base;
+
+  @include bp-min-width($large) {
+    margin-bottom: $base*1.5;
+  }
+}
+
+.page-header p {
+  margin-top: $base;
+}
