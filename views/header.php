@@ -16,7 +16,7 @@
       <a href="" class="school-link">Visit the Upper Moreland School District Webite</a>
       <ul class="account-nav">
         <li><a href="">Your Account</a></li>
-        <li><a href="">Your Cart <svg class="icon-cart"><use xlink:href="#icon-cart" /></svg></a></li>
+        <li><a href="cart.php">Your Cart <svg class="icon-cart"><use xlink:href="#icon-cart" /></svg></a></li>
       </ul>
     </div>
 

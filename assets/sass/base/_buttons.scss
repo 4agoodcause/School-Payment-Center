@@ -7,37 +7,41 @@ a {
 	}
 }
 
-.btn {
-  display: block;
-  padding: 1em 1.5em;
-  background: $gold;
-  color: #fff;
-  font: $med 1em/1 $sans;
-  text-transform: uppercase;
-  text-align: center;
 
-  @include bp-min-width($medium) {
+@mixin btn {
+  @include transition(background 0.15s ease-in);
+  @include font-size(17px);
+  display: block;
+  padding: 0.75em 1.5em;
+  background: $gold;
+  border-radius: 4px;
+  color: #fff;
+  font: $med 1em/1.5em $sans;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include bp-min-width($small) {
     display: inline-block;
   }
 
   &:hover {
-    color: #fff;
+  }
+}
+
+.btn {
+  @include btn;
+
+  &.btn-lt-purple {
+    background: $lt-purple;
+    color: $dk-purple;
   }
 }
 
 input[type="submit"],
 input[type="button"],
 button {
-  @include transition(background 0.15s ease-in);
-  @include font-size(17px);
-  padding: 12px 24px;
-  background: $gold;
+  @include btn;
   border: none;
-  border-radius: 4px;
-  color: #fff;
-  font: $med 1em/1.5em $sans;
-  text-transform: uppercase;
-  cursor: pointer;
 
   @include bp-max-width($small) {
     width: 100%;

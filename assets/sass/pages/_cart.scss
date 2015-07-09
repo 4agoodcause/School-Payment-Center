@@ -1,0 +1,119 @@
+
+.cart-table,
+.cart-thead,
+.cart-tbody {
+  @include bp-min-width($medium) {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+}
+
+.cart-table {
+  @include bp-max-width($medium) {
+    border-top: 1px solid $lt-purple;
+  }
+}
+
+.cart-row {
+  @include bp-max-width($medium) {
+    padding: 12px;
+  }
+
+  @include bp-min-width($medium) {
+    display: table-row;
+    width: 100%;
+  }
+}
+
+.cart-col {
+  @include bp-max-width($medium) {
+    position: relative;
+    padding-left: 100px;
+  }
+
+  @include bp-min-width($medium) {
+    display: table-cell;
+    padding: 12px;
+    vertical-align: middle;
+  }
+}
+
+.cart-row:nth-child(1) {
+  @include font-size(17px);
+  background: $dk-purple;
+  color: #fff;
+  font-weight: $med;
+
+  @include bp-max-width($medium) {
+    display: none;
+  }
+}
+
+.cart-row:not(:nth-child(1)):nth-child(2n+1) {
+  background: $lt-purple;
+}
+
+.cart-row:not(:nth-child(1)) {
+  @include font-size(15px);
+  border-left: 1px solid $lt-purple;
+  border-right: 1px solid $lt-purple;
+  font-weight: $med;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid $lt-purple;
+}
+
+.cart-col:first-child {
+  padding-right: 0;
+
+  @include bp-max-width($medium) {
+    display: none;
+  }
+}
+
+.cart-total {
+  @include font-size(24px);
+  margin: $base 0;
+  font-weight: $med;
+
+  @include bp-min-width($medium) {
+    margin: $base*1.5 0;
+    text-align: right;
+  }
+}
+
+.cart-actions {
+  @include bp-min-width($medium) {
+    text-align: right;
+  }
+}
+
+.cart-actions .btn:nth-child(1) {
+  margin-bottom: 12px;
+
+  @include bp-min-width($medium) {
+    float: right;
+    margin-left: 12px;
+  }
+}
+
+.cart-actions .btn:nth-child(2) {
+  @include bp-min-width($medium) {
+    margin-left: 12px;
+  }
+}
+
+@include bp-max-width($medium) {
+  .cart-col {
+  }
+  .cart-col:before { display: block; position: absolute; top: 0; left: 0; }
+  .cart-col:nth-child(2):before { content: "Item"; }
+  .cart-col:nth-child(3):before { content: "Student"; }
+  .cart-col:nth-child(4):before { content: "Quantity"; }
+  .cart-col:nth-child(5):before { content: "Price"; }
+  .cart-col:nth-child(6):before { content: "Total"; }
+}
+

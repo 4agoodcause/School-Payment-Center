@@ -190,6 +190,12 @@ svg:not(:root) {
   height: 20px;
 }
 
+.icon-close {
+  width: 20px;
+  height: 20px;
+  fill: #6b2ca3;
+}
+
 @media (min-width: 43.75em) {
   .row {
     *zoom: 1;
@@ -300,21 +306,29 @@ a {
 }
 
 .btn {
+  -moz-transition: background 0.15s ease-in;
+  -o-transition: background 0.15s ease-in;
+  -webkit-transition: background 0.15s ease-in;
+  transition: background 0.15s ease-in;
+  font-size: 17px;
+  font-size: 1.0625rem;
   display: block;
-  padding: 1em 1.5em;
+  padding: 0.75em 1.5em;
   background: #c9a737;
+  border-radius: 4px;
   color: #fff;
-  font: 500 1em/1 "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
+  font: 500 1em/1.5em "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
   text-transform: uppercase;
-  text-align: center;
+  cursor: pointer;
 }
-@media (min-width: 43.75em) {
+@media (min-width: 37.5em) {
   .btn {
     display: inline-block;
   }
 }
-.btn:hover {
-  color: #fff;
+.btn.btn-lt-purple {
+  background: #e1dee9;
+  color: #2a1c51;
 }
 
 input[type="submit"],
@@ -326,14 +340,22 @@ button {
   transition: background 0.15s ease-in;
   font-size: 17px;
   font-size: 1.0625rem;
-  padding: 12px 24px;
+  display: block;
+  padding: 0.75em 1.5em;
   background: #c9a737;
-  border: none;
   border-radius: 4px;
   color: #fff;
   font: 500 1em/1.5em "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
+  border: none;
+}
+@media (min-width: 37.5em) {
+  input[type="submit"],
+  input[type="button"],
+  button {
+    display: inline-block;
+  }
 }
 @media (max-width: 37.4375em) {
   input[type="submit"],
@@ -789,6 +811,150 @@ td, th {
   }
 }
 
+@media (min-width: 43.75em) {
+  .cart-table,
+  .cart-thead,
+  .cart-tbody {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+}
+
+@media (max-width: 43.6875em) {
+  .cart-table {
+    border-top: 1px solid #e1dee9;
+  }
+}
+
+@media (max-width: 43.6875em) {
+  .cart-row {
+    padding: 12px;
+  }
+}
+@media (min-width: 43.75em) {
+  .cart-row {
+    display: table-row;
+    width: 100%;
+  }
+}
+
+@media (max-width: 43.6875em) {
+  .cart-col {
+    position: relative;
+    padding-left: 100px;
+  }
+}
+@media (min-width: 43.75em) {
+  .cart-col {
+    display: table-cell;
+    padding: 12px;
+    vertical-align: middle;
+  }
+}
+
+.cart-row:nth-child(1) {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  background: #2a1c51;
+  color: #fff;
+  font-weight: 500;
+}
+@media (max-width: 43.6875em) {
+  .cart-row:nth-child(1) {
+    display: none;
+  }
+}
+
+.cart-row:not(:nth-child(1)):nth-child(2n+1) {
+  background: #e1dee9;
+}
+
+.cart-row:not(:nth-child(1)) {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  border-left: 1px solid #e1dee9;
+  border-right: 1px solid #e1dee9;
+  font-weight: 500;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid #e1dee9;
+}
+
+.cart-col:first-child {
+  padding-right: 0;
+}
+@media (max-width: 43.6875em) {
+  .cart-col:first-child {
+    display: none;
+  }
+}
+
+.cart-total {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin: 24px 0;
+  font-weight: 500;
+}
+@media (min-width: 43.75em) {
+  .cart-total {
+    margin: 36px 0;
+    text-align: right;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .cart-actions {
+    text-align: right;
+  }
+}
+
+.cart-actions .btn:nth-child(1) {
+  margin-bottom: 12px;
+}
+@media (min-width: 43.75em) {
+  .cart-actions .btn:nth-child(1) {
+    float: right;
+    margin-left: 12px;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .cart-actions .btn:nth-child(2) {
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 43.6875em) {
+  .cart-col:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .cart-col:nth-child(2):before {
+    content: "Item";
+  }
+
+  .cart-col:nth-child(3):before {
+    content: "Student";
+  }
+
+  .cart-col:nth-child(4):before {
+    content: "Quantity";
+  }
+
+  .cart-col:nth-child(5):before {
+    content: "Price";
+  }
+
+  .cart-col:nth-child(6):before {
+    content: "Total";
+  }
+}
 .top-bar {
   *zoom: 1;
   padding: 12px 20px;
