@@ -1,0 +1,118 @@
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+
+  @include bp-min-width($medium) {
+    position: absolute;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(#000, 0.5);
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  max-width: 600px;
+  width: 100%;
+  padding: $base*1 20px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(#000, 0.1);
+
+  @include bp-min-width($medium) {
+    @include total-center(fixed);
+    bottom: auto;
+    padding: $base*1.5 40px;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 46px;
+  height: 46px;
+  padding: 12px 0 0 12px;
+  background: $purple;
+
+  @include bp-min-width($medium) {
+    top: -46px;
+  }
+}
+
+.close-modal .icon-close {
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+}
+
+.modal-title {
+  @include font-size(21px);
+  margin-bottom: $base;
+  padding-right: 50px;
+}
+
+.modal h3 {
+  font-weight: bold;
+}
+
+.modal p:not(:last-child) {
+  margin-bottom: $base;
+}
+
+.modal-body {
+  position: relative;
+  overflow: hidden;
+  height: 80%;
+
+  @include bp-min-width($medium) {
+    height: $base*10;
+  }
+}
+
+.optiscroll-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 40px;
+}
+
+.optiscroll-v {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+  background: #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.optiscroll-vtrack {
+  display: block;
+  position: absolute;
+  right: 1px;
+  width: 6px;
+  background: #d1d1d1;
+  border-radius: 5px;
+}

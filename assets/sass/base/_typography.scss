@@ -28,11 +28,7 @@ h3 {
   @include font-size(15px);
 }
 
-h4 {
-  @include font-size(17px);
-}
-
-h5 {
+h4, h5 {
   @include font-size(15px);
   font-weight: $bold;
 }

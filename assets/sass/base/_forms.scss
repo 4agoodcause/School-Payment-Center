@@ -1,7 +1,28 @@
 
-.form-block {
-  margin-bottom: $base;
+.form-header {
+  margin-bottom: $base*2;
 }
+
+/** Form Block ============**/
+
+.form-block {
+  margin-bottom: $base*2;
+
+  h3, h4, p {
+    margin-bottom: 12px;
+  }
+
+  p {
+    max-width: 840px;
+  }
+
+  p:last-of-type {
+    margin-bottom: $base;
+  }
+}
+
+
+/** Form Item ============**/
 
 .form-item,
 .form-item-set {
@@ -42,6 +63,14 @@ label {
 .form-helper {
   @include font-size(13px);
   font-weight: $book;
+
+  a {
+    border-bottom: 1px solid $gold;
+  }
+
+  a:hover {
+    border-color: #fff;
+  }
 }
 
 label .form-helper {
@@ -57,6 +86,10 @@ textarea {
   border: 1px solid $dk-purple;
   outline: none;
   font: $book 1em/1em $sans;
+
+  @include bp-min-width($small) {
+    max-width: 420px;
+  }
 }
 
 input[type="text"]:focus,
@@ -68,9 +101,11 @@ textarea:focus {
 
 select {
   width: 100%;
-  height: 36px;
-  padding: 0 10px;
+  height: 44px;
+  padding: 0 16px;
+  background: none;
   border: 1px solid $dk-purple;
+  border-radius: 0;
   outline: none;
   font: $book 1em/1em $sans;
 }
@@ -86,10 +121,14 @@ textarea {
 .form-select {
   position: relative;
 
+  @include bp-min-width($small) {
+    max-width: 420px;
+  }
+
   &:before {
     content: "";
     position: absolute;
-    bottom: 17px;
+    bottom: 18px;
     right: 17px;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
@@ -227,3 +266,9 @@ input[type="checkbox"] {
     color: $red;
   }
 }
+
+
+
+
+
+

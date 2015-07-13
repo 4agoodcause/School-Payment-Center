@@ -98,12 +98,7 @@ h3 {
   font-size: 0.9375rem;
 }
 
-h4 {
-  font-size: 17px;
-  font-size: 1.0625rem;
-}
-
-h5 {
+h4, h5 {
   font-size: 15px;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -371,10 +366,25 @@ button {
   }
 }
 
+.form-header {
+  margin-bottom: 48px;
+}
+
+/** Form Block ============**/
 .form-block {
+  margin-bottom: 48px;
+}
+.form-block h3, .form-block h4, .form-block p {
+  margin-bottom: 12px;
+}
+.form-block p {
+  max-width: 840px;
+}
+.form-block p:last-of-type {
   margin-bottom: 24px;
 }
 
+/** Form Item ============**/
 .form-item,
 .form-item-set {
   margin-bottom: 12px;
@@ -424,6 +434,12 @@ label {
   font-size: 0.8125rem;
   font-weight: 400;
 }
+.form-helper a {
+  border-bottom: 1px solid #c9a737;
+}
+.form-helper a:hover {
+  border-color: #fff;
+}
 
 label .form-helper {
   margin-left: 4px;
@@ -439,6 +455,14 @@ textarea {
   outline: none;
   font: 400 1em/1em "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
 }
+@media (min-width: 37.5em) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    max-width: 420px;
+  }
+}
 
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -449,9 +473,11 @@ textarea:focus {
 
 select {
   width: 100%;
-  height: 36px;
-  padding: 0 10px;
+  height: 44px;
+  padding: 0 16px;
+  background: none;
   border: 1px solid #2a1c51;
+  border-radius: 0;
   outline: none;
   font: 400 1em/1em "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
 }
@@ -465,10 +491,15 @@ textarea {
 .form-select {
   position: relative;
 }
+@media (min-width: 37.5em) {
+  .form-select {
+    max-width: 420px;
+  }
+}
 .form-select:before {
   content: "";
   position: absolute;
-  bottom: 17px;
+  bottom: 18px;
   right: 17px;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
@@ -776,6 +807,135 @@ td, th {
     line-height: 20px;
     line-height: 1.25rem;
   }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+@media (min-width: 43.75em) {
+  .modal {
+    position: absolute;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  max-width: 600px;
+  width: 100%;
+  padding: 24px 20px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 43.75em) {
+  .modal-wrapper {
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    padding: 36px 40px;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 46px;
+  height: 46px;
+  padding: 12px 0 0 12px;
+  background: #6b2ca3;
+}
+@media (min-width: 43.75em) {
+  .close-modal {
+    top: -46px;
+  }
+}
+
+.close-modal .icon-close {
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+}
+
+.modal-title {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  margin-bottom: 24px;
+  padding-right: 50px;
+}
+
+.modal h3 {
+  font-weight: bold;
+}
+
+.modal p:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.modal-body {
+  position: relative;
+  overflow: hidden;
+  height: 80%;
+}
+@media (min-width: 43.75em) {
+  .modal-body {
+    height: 240px;
+  }
+}
+
+.optiscroll-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 40px;
+}
+
+.optiscroll-v {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+  background: #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.optiscroll-vtrack {
+  display: block;
+  position: absolute;
+  right: 1px;
+  width: 6px;
+  background: #d1d1d1;
+  border-radius: 5px;
 }
 
 .product-body {

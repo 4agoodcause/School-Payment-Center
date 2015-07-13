@@ -48,8 +48,8 @@
       <div class="cart-total">Total:  $360.00</div>
 
       <div class="cart-actions">
-        <input type="submit" value="Proceed to Checkout" class="btn">
-        <input type="submit" value="Continue Shopping" class="btn btn-lt-purple">
+        <a href="checkout.php" class="btn">Proceed to Checkout</a>
+        <a href="./" class="btn btn-lt-purple">Continue Shopping</a>
       </div>
 
     </section>
