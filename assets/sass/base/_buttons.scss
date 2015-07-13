@@ -1,9 +1,10 @@
 
 a {
 	@include transition(all 0.15s ease-in);
-	color: $gold;
+  color: $purple;
 
 	&:hover {
+    color: $gold;
 	}
 }
 

@@ -152,6 +152,8 @@ em {
 
 .body ul,
 .body ol {
+  font-size: 15px;
+  font-size: 0.9375rem;
   margin-left: 1.5em;
 }
 
@@ -161,6 +163,23 @@ em {
 
 .body ol li {
   list-style: decimal;
+}
+
+.body h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+.body h3,
+.body h4,
+.body h5 {
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
+.body a {
+  font-weight: 500;
 }
 
 svg {
@@ -303,6 +322,9 @@ a {
   -o-transition: all 0.15s ease-in;
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
+  color: #6b2ca3;
+}
+a:hover {
   color: #c9a737;
 }
 

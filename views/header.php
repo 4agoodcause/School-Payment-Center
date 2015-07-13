@@ -37,7 +37,7 @@
         <span class="menu-bar"></span>
         </span></a>
         <ul class="nav-items">
-          <li><a href="">About Us</a></li>
+          <li><a href="about.php">About Us</a></li>
           <li><a href="">Contact Us</a></li>
           <li><a href="">Ordering Info</a></li>
         </ul>

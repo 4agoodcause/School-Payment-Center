@@ -75,6 +75,7 @@ em {
 
 .body ul,
 .body ol {
+  @include font-size(15px);
   margin-left: 1.5em;
 }
 
@@ -84,4 +85,19 @@ em {
 
 .body ol li {
   list-style: decimal;
+}
+
+.body h3 {
+  @include font-size(24px);
+  text-transform: none;
+}
+
+.body h3,
+.body h4,
+.body h5 {
+  @include line-height(24px);
+}
+
+.body a {
+  font-weight: $med;
 }
