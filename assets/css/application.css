@@ -843,6 +843,11 @@ td, th {
   background: #fff;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 43.6875em) {
+  .modal-wrapper {
+    overflow-y: scroll;
+  }
+}
 @media (min-width: 43.75em) {
   .modal-wrapper {
     -moz-transform: translate(-50%, -50%);

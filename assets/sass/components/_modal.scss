@@ -32,6 +32,10 @@
   background: #fff;
   box-shadow: 0 0 30px rgba(#000, 0.1);
 
+  @include bp-max-width($medium) {
+    overflow-y: scroll;
+  }
+
   @include bp-min-width($medium) {
     @include total-center(fixed);
     bottom: auto;
