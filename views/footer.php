@@ -9,7 +9,7 @@
         <ul>
           <li>Logo</li>
           <li>Logo</li>
-          <li><a href="http://www.4agoodcause.com/"><img src="../assets/images/powered-by.svg" class="logo-powered-by"></a></li>
+          <li><a href="http://www.4agoodcause.com/"><img src="assets/images/powered-by.svg" class="logo-powered-by"></a></li>
         </ul>
       </div>
 
