@@ -1576,6 +1576,11 @@ td, th {
   font-size: 0.8125rem;
 }
 
+@media (max-width: 43.6875em) {
+  .footer .copyright {
+    margin-bottom: 24px;
+  }
+}
 @media (min-width: 43.75em) {
   .footer .copyright {
     float: left;
@@ -1602,6 +1607,11 @@ td, th {
   }
 }
 
+@media (max-width: 43.6875em) {
+  .footer .security li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
 @media (min-width: 43.75em) {
   .footer .security li:not(:last-child) {
     margin-right: 24px;

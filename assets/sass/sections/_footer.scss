@@ -19,6 +19,10 @@
 }
 
 .footer .copyright {
+  @include bp-max-width($medium) {
+    margin-bottom: $base;
+  }
+
   @include bp-min-width($medium) {
     float: left;
   }
@@ -38,6 +42,10 @@
 }
 
 .footer .security li:not(:last-child) {
+  @include bp-max-width($medium) {
+    margin-bottom: 12px;
+  }
+
   @include bp-min-width($medium) {
     margin-right: 24px;
   }
