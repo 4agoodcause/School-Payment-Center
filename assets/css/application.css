@@ -1584,6 +1584,30 @@ td, th {
 
 @media (min-width: 43.75em) {
   .footer .security {
+    *zoom: 1;
     float: right;
   }
+  .footer .security:before, .footer .security:after {
+    content: " ";
+    display: block;
+  }
+  .footer .security:after {
+    clear: both;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .footer .security li {
+    float: left;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .footer .security li:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.logo-powered-by {
+  width: 80px;
 }

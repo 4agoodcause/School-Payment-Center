@@ -5,11 +5,13 @@
         <p><a href="">Privacy Polity</a> | <a href="">Contact Us</a> | <a href="">Terms of Use</a></p>
       </div>
 
-      <nav class="security">
+      <div class="security">
         <ul>
-          <li><a href="">4aGoodCause.com</a></li>
+          <li>Logo</li>
+          <li>Logo</li>
+          <li><a href="http://www.4agoodcause.com/"><img src="../assets/images/powered-by.svg" class="logo-powered-by"></a></li>
         </ul>
-      </nav>
+      </div>
 
     </footer>
 

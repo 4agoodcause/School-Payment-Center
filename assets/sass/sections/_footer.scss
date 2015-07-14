@@ -26,6 +26,23 @@
 
 .footer .security {
   @include bp-min-width($medium) {
+    @include cf;
     float: right;
   }
+}
+
+.footer .security li {
+  @include bp-min-width($medium) {
+    float: left;
+  }
+}
+
+.footer .security li:not(:last-child) {
+  @include bp-min-width($medium) {
+    margin-right: 24px;
+  }
+}
+
+.logo-powered-by {
+  width: 80px;
 }
