@@ -26,14 +26,22 @@ a {
   }
 
   &:hover {
+    color: #fff;
+    background: $dk-gold;
   }
 }
 
 .btn {
   @include btn;
+}
 
-  &.btn-lt-purple {
-    background: $lt-purple;
+.btn.btn-lt-purple {
+  @include btn;
+  background: $lt-purple;
+  color: $dk-purple;
+
+  &:hover {
+    background: $md-purple;
     color: $dk-purple;
   }
 }

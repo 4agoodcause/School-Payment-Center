@@ -20,7 +20,7 @@
           <div class="cart-col">Total</div>
         </div>
         <div class="cart-row">
-          <div class="cart-col"><svg class="icon-close"><use xlink:href="#icon-close" /></svg></div>
+          <div class="cart-col"><a href=""><svg class="icon-close"><use xlink:href="#icon-close" /></svg></a></div>
           <div class="cart-col">Product Title Goes Here</div>
           <div class="cart-col">John Paul Jones</div>
           <div class="cart-col">2</div>
@@ -28,7 +28,7 @@
           <div class="cart-col">$120.00</div>
         </div>
         <div class="cart-row">
-          <div class="cart-col"><svg class="icon-close"><use xlink:href="#icon-close" /></svg></div>
+          <div class="cart-col"><a href=""><svg class="icon-close"><use xlink:href="#icon-close" /></svg></a></div>
           <div class="cart-col">Product Title Goes Here</div>
           <div class="cart-col">George Anderson</div>
           <div class="cart-col">3</div>
@@ -36,7 +36,7 @@
           <div class="cart-col">$60.00</div>
         </div>
         <div class="cart-row">
-          <div class="cart-col"><svg class="icon-close"><use xlink:href="#icon-close" /></svg></div>
+          <div class="cart-col"><a href=""><svg class="icon-close"><use xlink:href="#icon-close" /></svg></a></div>
           <div class="cart-col">Product Title Goes Here</div>
           <div class="cart-col">Susan Smith</div>
           <div class="cart-col">1</div>

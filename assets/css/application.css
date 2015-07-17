@@ -349,8 +349,40 @@ a:hover {
     display: inline-block;
   }
 }
+.btn:hover {
+  color: #fff;
+  background: #ae8c1c;
+}
+
 .btn.btn-lt-purple {
+  -moz-transition: background 0.15s ease-in;
+  -o-transition: background 0.15s ease-in;
+  -webkit-transition: background 0.15s ease-in;
+  transition: background 0.15s ease-in;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  display: block;
+  padding: 0.75em 1.5em;
+  background: #c9a737;
+  border-radius: 4px;
+  color: #fff;
+  font: 500 1em/1.5em "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
   background: #e1dee9;
+  color: #2a1c51;
+}
+@media (min-width: 37.5em) {
+  .btn.btn-lt-purple {
+    display: inline-block;
+  }
+}
+.btn.btn-lt-purple:hover {
+  color: #fff;
+  background: #ae8c1c;
+}
+.btn.btn-lt-purple:hover {
+  background: #cbc4df;
   color: #2a1c51;
 }
 
@@ -379,6 +411,12 @@ button {
   button {
     display: inline-block;
   }
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+  color: #fff;
+  background: #ae8c1c;
 }
 @media (max-width: 37.4375em) {
   input[type="submit"],
