@@ -24,7 +24,7 @@
         <div class="form-item form-radio">
           <input type="radio" name="password" id="Yes" value="Yes">
           <label for="Yes">Yes, I have a password</label>
-          <input type="text">
+          <input type="password">
         </div>
         <div class="form-item">
           <input type="submit" value="Sign In">
