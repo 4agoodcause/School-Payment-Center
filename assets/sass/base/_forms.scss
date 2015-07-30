@@ -254,6 +254,11 @@ input[type="checkbox"] {
 
 /** Messages ============**/
 
+.error-message {
+  @include font-size(13px);
+  padding-top: 4px;
+}
+
 .message {
   margin-bottom: 12px;
   font-weight: $bold;

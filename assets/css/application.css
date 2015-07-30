@@ -673,6 +673,12 @@ input[type="checkbox"] {
 }
 
 /** Messages ============**/
+.error-message {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  padding-top: 4px;
+}
+
 .message {
   margin-bottom: 12px;
   font-weight: 700;
