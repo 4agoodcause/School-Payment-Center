@@ -1145,6 +1145,18 @@ td, th {
   }
 }
 
+.cart-col .student-name {
+  margin-bottom: 4px;
+}
+
+.cart-col .student-info {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
 .cart-total {
   font-size: 24px;
   font-size: 1.5rem;

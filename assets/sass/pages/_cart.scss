@@ -74,6 +74,16 @@
   }
 }
 
+.cart-col .student-name {
+  margin-bottom: 4px;
+}
+
+.cart-col .student-info {
+  @include font-size(13px);
+  @include line-height(20px);
+  font-weight: $book;
+}
+
 .cart-total {
   @include font-size(24px);
   margin: $base 0;

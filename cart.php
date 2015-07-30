@@ -22,7 +22,13 @@
         <div class="cart-row">
           <div class="cart-col"><a href=""><svg class="icon-close"><use xlink:href="#icon-close" /></svg></a></div>
           <div class="cart-col">Product Title Goes Here</div>
-          <div class="cart-col">John Paul Jones</div>
+          <div class="cart-col">
+            <div class="student-name">John Paul Jones</div>
+            <div class="student-info">
+              <div class="student-id">12345678</div>
+              <div class="student-school">Upper Moreland High School</div>
+            </div>
+          </div>
           <div class="cart-col">2</div>
           <div class="cart-col">$60.00</div>
           <div class="cart-col">$120.00</div>
